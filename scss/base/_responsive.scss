@@ -62,6 +62,17 @@
 }
 
 @media (max-width: 528px) {
+    .tooltiptext{
+        text-align: center;
+        padding: 2px 8px 2px 8px;
+        width: 300px;
+        border-radius: 4px;
+        background: rgb(206, 206, 206);
+        left: -25%!important;
+        top: -120%!important;
+        position: absolute;
+        display: flex;
+    }
     header{            
         z-index: 100!important;
         display: flex;

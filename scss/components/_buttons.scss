@@ -73,19 +73,22 @@
 }
 
 .text-btn{
+    position: relative;
     display: inline-flex;
     padding: 8px;
     justify-content: center;
     align-items: center;
     gap: 8px;
 
-    text-decoration: none;
+    text-decoration: underline!important;
     font-family: $body-font;
     font-size: $body-font-size;
     font-weight: $body-font-weight;
     color: $green;
     transition: 0.5s;
-
+    .tooltiptext{
+        display: none;
+    }
     svg{
         fill: $green;
         transition: 0.5s;
@@ -95,6 +98,16 @@
         transition: 0.5s;
         transform: translatey(3px);
         color: darken($green, 20%);
+        .tooltiptext{
+            text-align: center;
+            padding: 2px 8px 2px 8px;
+            width: 300px;
+            border-radius: 4px;
+            background: rgb(206, 206, 206);
+            left: 100%;
+            position: absolute;
+            display: flex;
+        }
         svg{
             transition: 0.5s;
             fill: darken($green, 20%);

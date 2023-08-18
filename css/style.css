@@ -121,6 +121,19 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (max-width: 528px) {
+  .tooltiptext {
+    text-align: center;
+    padding: 2px 8px 2px 8px;
+    width: 300px;
+    border-radius: 4px;
+    background: rgb(206, 206, 206);
+    left: -25% !important;
+    top: -120% !important;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   header {
     z-index: 100 !important;
     display: -webkit-box;
@@ -382,6 +395,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .text-btn {
+  position: relative;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -393,13 +407,16 @@ p, h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
   gap: 8px;
-  text-decoration: none;
+  text-decoration: underline !important;
   font-family: "Montserrat", sans-serif;
   font-size: 0.875em;
   font-weight: 500;
   color: #236C63;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+.text-btn .tooltiptext {
+  display: none;
 }
 .text-btn svg {
   fill: #236C63;
@@ -412,6 +429,18 @@ p, h1, h2, h3, h4, h5, h6 {
   -webkit-transform: translatey(3px);
           transform: translatey(3px);
   color: #0a1f1c;
+}
+.text-btn:hover .tooltiptext {
+  text-align: center;
+  padding: 2px 8px 2px 8px;
+  width: 300px;
+  border-radius: 4px;
+  background: rgb(206, 206, 206);
+  left: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .text-btn:hover svg {
   -webkit-transition: 0.5s;
