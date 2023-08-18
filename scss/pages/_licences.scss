@@ -1,0 +1,52 @@
+.section-info-licences{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    padding: 10vw 10vw 0vw 10vw;
+    color:$smokeywhite;
+    text-align: center;
+    .flowers-left2{
+        position: absolute;
+        left: 0;
+        bottom: -60%;
+    }
+    .flowers-right2{
+        position: absolute;
+        right: 0%;
+        top: 0%;
+    }
+    .section-title{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 1vw;
+        .divider-white{
+            background: $smokeywhite;
+            width: 254px;
+            height: 1px;
+        }
+        h2{
+            font-family: $h2-display-font;
+            font-size: $h2-display-font-size;
+            font-weight: $h2-display-font-weight;
+            letter-spacing: 3.84px;
+        }
+    }
+    h4{
+        font-family: $h4-display-font;
+        font-size: $h4-display-font-size;
+        font-weight: $h4-display-font-weight;
+        letter-spacing: 2.88px;
+    }
+
+    .card-group{
+        display: inline-flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+}

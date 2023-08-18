@@ -1,0 +1,125 @@
+footer{
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 4vw;
+    padding: 2vw;
+    .section-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vw;
+        color: $white;
+        .divider-white{
+            background: $smokeywhite;
+            width: 254px;
+            height: 1px;
+        }
+        h2{
+            font-family: $h2-display-font;
+            font-size: $h2-display-font-size;
+            font-weight: $h2-display-font-weight;
+            letter-spacing: 3.84px;
+        }
+    }
+    .social-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+        a{
+            transition: 0.5s;
+            &:hover{
+                color: lighten($smokeywhite, 50%);
+                transform: translateY(3px);
+                transition: 0.5s;
+                text-shadow: 0px 0px 16px #FFF;
+            }
+        }
+    }
+    .email {
+        height: fit-content;
+        width: fit-content;
+        margin-right: auto;
+        margin-left: auto;
+        cursor: pointer;
+        padding: 8px 16px;
+        justify-content: center;
+        align-items: center;
+        background-color: $grey;
+        border-radius: 0.4vw;
+        stroke: none;
+        text-align: center;
+
+        font-family: $body-font;
+        color: $smokeywhite;
+        transition: 0.5s;
+        &:hover{
+            color: lighten($smokeywhite, 50%);
+            transform: translateY(3px);
+            transition: 0.5s;
+        }
+    }
+    /* Snackbar Styles */
+    .snackbar-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        #snackbar {
+            visibility: hidden;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: $green;
+            color: $white;
+            text-align: center;
+            border-radius: 2px;
+            padding: 8px;
+            position: fixed;
+            z-index: 1;
+            // left: auto;
+            bottom: 30px;
+            font-family: $body-font;
+            font-size: 16px;
+            opacity: 0;
+            transition: opacity 0.3s, bottom 0.5s;
+        }
+        #snackbar.show {
+            visibility: visible;
+            opacity: 1;
+            bottom: 4vw; /* Adjust this value to control how far up the snackbar slides */
+        }
+    }
+
+    .footer-links{
+        color: $smokeywhite;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: $body-font;
+
+        .items-left{
+            display: flex;
+            gap: 2vw;
+            .nav-link{
+                color: $smokeywhite;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: fit-content;
+                gap: 0.4vw;
+                text-decoration: none;
+                transition: 0.5s;
+                &:hover{
+                    color: lighten($smokeywhite, 50%);
+                    transform: translateY(3px);
+                    transition: 0.5s;
+                    text-shadow: 0px 0px 16px #FFF;
+                }
+            }
+        }
+    }
+}
